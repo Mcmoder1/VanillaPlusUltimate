@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "has_used_metal_detector": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillaplus:metal_detector"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "vanillaplus:block/silver_block",
+    "description": {
+      "text": "Comes with a 10 day warranty!"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "vanillaplus:metal_detector",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Metal Detective"
+    }
+  },
+  "requirements": [
+    [
+      "has_used_metal_detector"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

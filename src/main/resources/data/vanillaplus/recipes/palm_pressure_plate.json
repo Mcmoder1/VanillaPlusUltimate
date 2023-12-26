@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "p": {
+      "item": "vanillaplus:palm_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "pp ",
+    "   "
+  ],
+  "result": {
+    "item": "vanillaplus:palm_pressure_plate"
+  },
+  "show_notification": true
+}

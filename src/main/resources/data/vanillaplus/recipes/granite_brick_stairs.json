@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "w  ",
+    "ww ",
+    "www"
+  ],
+  "key": {
+    "w": {
+      "item": "vanillaplus:granite_bricks"
+    }
+  },
+  "result": {
+    "item": "vanillaplus:granite_brick_stairs",
+    "count": 4
+  }
+}

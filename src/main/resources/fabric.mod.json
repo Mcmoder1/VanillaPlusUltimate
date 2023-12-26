@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "vanillaplus",
+	"version": "${version}",
+	"name": "VanillaPlus",
+	"description": "adds some of the most requested game features",
+	"authors": [
+		"Moder0"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/Mcmoder1/VanillaPlusUltimate"
+	},
+	"license": "MIT",
+	"icon": "assets/vanillaplus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.moder0.vanillaplus.VanillaPlus"
+		],
+		"client": [
+			"net.moder0.vanillaplus.VanillaPlusClient"
+		],
+		"fabric-datagen": [
+			"net.moder0.vanillaplus.VanillaPlusDataGenerator"
+		],
+		"rei_client": [
+			"net.moder0.vanillaplus.compat.VanillaPlusREIClientPlugin"
+		],
+		"terrablender": [
+			"net.moder0.vanillaplus.world.biome.ModTerrablenderAPI"
+		]
+	},
+	"mixins": [
+		"vanillaplus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanillaplus:palm_log",
+    "vanillaplus:palm_wood",
+    "vanillaplus:stripped_palm_log",
+    "vanillaplus:stripped_palm_wood"
+  ]
+}

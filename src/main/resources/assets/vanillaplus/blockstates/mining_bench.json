@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "vanillaplus:block/mining_bench"}
+  }
+}

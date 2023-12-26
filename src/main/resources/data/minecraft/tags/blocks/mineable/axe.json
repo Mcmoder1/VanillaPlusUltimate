@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "vanillaplus:soul_jack_o_lantern",
+    "vanillaplus:mining_bench",
+    "vanillaplus:usable_beehive",
+    "vanillaplus:palm_planks",
+    "vanillaplus:palm_log",
+    "vanillaplus:palm_wood",
+    "vanillaplus:stripped_palm_log",
+    "vanillaplus:stripped_palm_wood",
+    "vanillaplus:palm_fence",
+    "vanillaplus:palm_fence_gate",
+    "vanillaplus:palm_pressure_plate",
+    "vanillaplus:palm_button",
+    "vanillaplus:palm_door",
+    "vanillaplus:palm_trapdoor",
+    "vanillaplus:palm_slab",
+    "vanillaplus:palm_stairs",
+    "vanillaplus:palm_standing_sign",
+    "vanillaplus:palm_wall_sign",
+    "vanillaplus:palm_hanging_sign",
+    "vanillaplus:palm_wall_hanging_sign"
+  ]
+}

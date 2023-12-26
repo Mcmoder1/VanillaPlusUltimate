@@ -1,0 +1,6 @@
+{
+  "parent": "vanillaplus:block/template_wall_side",
+  "textures": {
+    "wall": "vanillaplus:block/granite_bricks"
+  }
+}

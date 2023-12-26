@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "vanillaplus:diorite_bricks"
+  },
+  "result": "vanillaplus:diorite_brick_slab",
+  "count": 2
+}

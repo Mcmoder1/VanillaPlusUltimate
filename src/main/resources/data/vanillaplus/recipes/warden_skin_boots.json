@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "vanillaplus:warden_skin"
+    }
+  },
+  "pattern": [
+    "   ",
+    "a a",
+    "a a"
+  ],
+  "result": {
+    "item": "vanillaplus:warden_skin_boots"
+  },
+  "show_notification": true
+}

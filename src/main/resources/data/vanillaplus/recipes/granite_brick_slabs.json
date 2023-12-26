@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "---",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "-": {
+      "item": "vanillaplus:granite_bricks"
+    }
+  },
+  "result": {
+    "item": "vanillaplus:granite_brick_slab",
+    "count": 6
+  }
+}

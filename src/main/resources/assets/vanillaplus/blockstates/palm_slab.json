@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaplus:block/palm_slab"
+    },
+    "type=double": {
+      "model": "vanillaplus:block/palm_planks"
+    },
+    "type=top": {
+      "model": "vanillaplus:block/palm_slab_top"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "vanillaplus:block/template_wall_side_tall",
+  "textures": {
+    "wall": "vanillaplus:block/andesite_bricks"
+  }
+}

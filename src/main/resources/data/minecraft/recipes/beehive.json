@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "minecraft:air"
+    }
+  },
+  "pattern": [
+    "   ",
+    "HHH",
+    "   "
+  ],
+  "result": {
+    "item": "minecraft:beehive"
+  },
+  "show_notification": true
+}

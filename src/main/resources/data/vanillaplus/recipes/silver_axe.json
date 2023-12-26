@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "## ",
+    "#| ",
+    " | "
+  ],
+  "key": {
+    "#": {
+      "item": "vanillaplus:silver_ingot"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "vanillaplus:silver_axe"
+  }
+}

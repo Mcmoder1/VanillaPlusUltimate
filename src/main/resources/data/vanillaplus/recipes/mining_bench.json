@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "p": [
+      {
+        "tag": "minecraft:planks"
+      }
+    ]
+  },
+  "pattern": [
+    "ppp",
+    "pip",
+    "ppp"
+  ],
+  "result": {
+    "item": "vanillaplus:mining_bench"
+  },
+  "show_notification": true
+}

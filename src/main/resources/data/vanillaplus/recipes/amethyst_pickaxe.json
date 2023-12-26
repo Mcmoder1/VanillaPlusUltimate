@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "aaa",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "item": "vanillaplus:amethyst_pickaxe"
+  },
+  "show_notification": true
+}

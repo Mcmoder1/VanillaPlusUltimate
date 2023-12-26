@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "palm",
+  "ingredients": [
+    {
+      "item": "vanillaplus:palm_planks"
+    }
+  ],
+  "result": {
+    "item": "vanillaplus:palm_button"
+  }
+}

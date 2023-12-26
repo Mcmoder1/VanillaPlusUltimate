@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanillaplus:silver_ore",
+    "vanillaplus:deepslate_silver_ore",
+    "vanillaplus:raw_silver_block",
+    "vanillaplus:silver_block"
+  ]
+}

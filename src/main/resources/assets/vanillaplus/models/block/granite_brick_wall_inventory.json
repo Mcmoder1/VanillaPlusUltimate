@@ -1,0 +1,6 @@
+{
+  "parent": "vanillaplus:block/wall_inventory",
+  "textures": {
+    "wall": "vanillaplus:block/granite_bricks"
+  }
+}

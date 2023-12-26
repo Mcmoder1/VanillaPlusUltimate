@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "vanillaplus:warden_skin_chestplate"
+  },
+  "addition": {
+    "item": "vanillaplus:warden_heart"
+  },
+  "result": {
+    "item": "vanillaplus:warden_chestplate"
+  }
+}

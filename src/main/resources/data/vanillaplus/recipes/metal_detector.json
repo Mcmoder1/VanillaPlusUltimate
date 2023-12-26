@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " # ",
+    "-=-"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "-": {
+      "item": "minecraft:red_concrete"
+    },
+    "=": [
+      {
+        "item": "vanillaplus:silver_block"
+      },
+      {
+        "item": "minecraft:iron_block"
+      }
+    ]
+  },
+  "result": {
+    "item": "vanillaplus:metal_detector"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "w  ",
+    "ww ",
+    "www"
+  ],
+  "key": {
+    "w": {
+      "item": "vanillaplus:andesite_bricks"
+    }
+  },
+  "result": {
+    "item": "vanillaplus:andesite_brick_stairs",
+    "count": 4
+  }
+}

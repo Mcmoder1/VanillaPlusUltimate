@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "vanillaplus:block/palm_door_bottom",
+    "top": "vanillaplus:block/palm_door_top"
+  }
+}

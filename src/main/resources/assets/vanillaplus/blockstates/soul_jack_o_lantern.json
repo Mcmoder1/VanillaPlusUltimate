@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vanillaplus:block/soul_jack_o_lantern",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vanillaplus:block/soul_jack_o_lantern"
+    },
+    "facing=south": {
+      "model": "vanillaplus:block/soul_jack_o_lantern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vanillaplus:block/soul_jack_o_lantern",
+      "y": 270
+    }
+  }
+}

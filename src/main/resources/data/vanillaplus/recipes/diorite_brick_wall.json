@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "www",
+    "www",
+    "   "
+  ],
+  "key": {
+    "w": {
+      "item": "vanillaplus:diorite_bricks"
+    }
+  },
+  "result": {
+    "item": "vanillaplus:diorite_brick_wall",
+    "count": 6
+  }
+}

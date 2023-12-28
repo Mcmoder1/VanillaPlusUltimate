@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "h": {
+      "item": "vanillaplus:warden_heart"
+    },
+    "k": {
+      "item": "vanillaplus:key"
+    },
+    "s": {
+      "item": "vanillaplus:warden_skin"
+    }
+  },
+  "pattern": [
+    "shs",
+    "sks",
+    "sss"
+  ],
+  "result": {
+    "item": "vanillaplus:activated_key"
+  },
+  "show_notification": true
+}

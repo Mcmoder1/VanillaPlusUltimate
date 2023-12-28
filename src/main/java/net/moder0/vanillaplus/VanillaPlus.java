@@ -1,11 +1,14 @@
 package net.moder0.vanillaplus;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.moder0.vanillaplus.block.ModBlocks;
+import net.moder0.vanillaplus.command.SetHomeCommand;
+import net.moder0.vanillaplus.command.TpHomeCommand;
 import net.moder0.vanillaplus.entity.ModBoats;
 import net.moder0.vanillaplus.entity.ModEntities;
 import net.moder0.vanillaplus.entity.custom.SculkZombieEntity;
@@ -40,10 +43,13 @@ public class VanillaPlus implements ModInitializer {
 
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(Blocks.REINFORCED_DEEPSLATE)
-				.lightWithItem(ModItems.WARDEN_HEART)
+				.lightWithItem(ModItems.ACTIVATED_KEY)
 				.destDimID(new Identifier(VanillaPlus.MOD_ID, "deep_dark"))
 				.tintColor(29, 62, 128)
 				.registerPortal();
+
+		CommandRegistrationCallback.EVENT.register(SetHomeCommand::register);
+		CommandRegistrationCallback.EVENT.register(TpHomeCommand::register);
 
 	}
 }

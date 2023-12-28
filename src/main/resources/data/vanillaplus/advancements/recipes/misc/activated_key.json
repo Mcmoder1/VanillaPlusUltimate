@@ -1,0 +1,61 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_key": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillaplus:key"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vanillaplus:activated_key"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_warden_heart": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillaplus:warden_heart"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_warden_skin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillaplus:warden_skin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_key",
+      "has_warden_heart",
+      "has_warden_skin"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vanillaplus:activated_key"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -6,6 +6,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.moder0.vanillaplus.VanillaPlus;
 import net.moder0.vanillaplus.block.ModBlocks;
@@ -16,10 +17,12 @@ import net.moder0.vanillaplus.item.custom.ModAxeItem;
 import net.moder0.vanillaplus.item.custom.ModHoeItem;
 import net.moder0.vanillaplus.item.custom.ModPickaxeItem;
 
+import java.util.List;
+
 public class ModItems {
 //-----------------------------------------------------------------------------------------------------
 
-    //food
+//food
 
     public static final Item CHERRIES = registerItem("cherries",
             new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(8.6f).build())));
@@ -27,7 +30,7 @@ public class ModItems {
     public static final Item COCONUT = registerItem("coconut",
             new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(2).saturationModifier(8.6f).build())));
 
-    //silver group
+//silver group
 
     public static final Item RAW_SILVER = registerItem("raw_silver",
             new Item(new FabricItemSettings()));
@@ -68,7 +71,7 @@ public class ModItems {
     public static final Item SILVER_BOOTS = registerItem("silver_boots",
             new ArmorItem(ModArmorMaterials.SILVER, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    //copper group
+//copper group
 
     public static final Item COPPER_SWORD = registerItem("copper_sword",
             new SwordItem(ModToolMaterials.COPPER, 3, -2.1f, new FabricItemSettings()));
@@ -97,7 +100,7 @@ public class ModItems {
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
             new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    //amethyst
+//amethyst
 
     public static final Item AMETHYST_SWORD = registerItem("amethyst_sword",
             new SwordItem(ModToolMaterials.AMETHYST, 3, -2.4f, new FabricItemSettings()));
@@ -126,7 +129,7 @@ public class ModItems {
     public static final Item AMETHYST_BOOTS = registerItem("amethyst_boots",
             new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    //sign items
+//sign items
     public static final Item PALM_SIGN = registerItem("palm_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_PALM_SIGN, ModBlocks.WALL_PALM_SIGN));
 
@@ -140,6 +143,22 @@ public class ModItems {
 
     public static final Item WARDEN_HEART = registerItem("warden_heart",
             new Item(new FabricItemSettings().maxCount(1)));
+
+    public static final Item KEY = registerItem("key",
+            new Item(new FabricItemSettings().maxCount(16)));
+
+    public static final Item ACTIVATED_KEY = registerItem("activated_key",
+            new Item(new FabricItemSettings().maxCount(1)));
+
+    public static final Item SCULK_UPGRADE_SMITHING_TEMPLATE = registerItem("sculk_upgrade_smithing_template",
+            new SmithingTemplateItem(Text.literal("Warden Skin"), Text.literal("Wardens Heart"),
+                    Text.literal("Warden Armor Upgrade"), Text.literal("Any Warden Skin Armor"),
+                    Text.literal("Warden's Heart"),
+                    List.of(Identifier.of("minecraft", "item/empty_armor_slot_helmet"),
+                            Identifier.of("minecraft", "item/empty_armor_slot_chestplate"),
+                            Identifier.of("minecraft", "item/empty_armor_slot_leggings"),
+                            Identifier.of("minecraft", "item/empty_armor_slot_boots")),
+                    List.of(Identifier.of("vanillaplus", "item/empty_warden_heart_slot"))));
 
     public static final Item SCULK_ZOMBIE_SPAWN_EGG = registerItem("sculk_zombie_spawn_egg",
             new SpawnEggItem(ModEntities.SCULK_ZOMBIE,0x008B42,0x0055D1 , new FabricItemSettings()));
@@ -169,7 +188,7 @@ public class ModItems {
     public static final Item WARDEN_SKIN_BOOTS = registerItem("warden_skin_boots",
             new ArmorItem(ModArmorMaterials.WARDEN_SKIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    //misc
+//misc
 
     public static final Item QUICKSAND_BUCKET = registerItem("quicksand_bucket",
             new PowderSnowBucketItem(ModBlocks.QUICKSAND, SoundEvents.BLOCK_SAND_PLACE, new FabricItemSettings()));

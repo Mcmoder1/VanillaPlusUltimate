@@ -112,6 +112,9 @@ public class ModItemGroup {
             entries.add(ModItems.SILVER_NUGGET);
             entries.add(ModItems.WARDEN_HEART);
             entries.add(ModItems.WARDEN_SKIN);
+            entries.add(ModItems.KEY);
+            entries.add(ModItems.ACTIVATED_KEY);
+            entries.add(ModItems.SCULK_UPGRADE_SMITHING_TEMPLATE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {

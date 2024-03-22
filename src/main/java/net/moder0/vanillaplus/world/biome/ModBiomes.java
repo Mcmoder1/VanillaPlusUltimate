@@ -9,10 +9,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.BiomeEffects;
-import net.minecraft.world.biome.GenerationSettings;
-import net.minecraft.world.biome.SpawnSettings;
+import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.moder0.vanillaplus.VanillaPlus;
 import net.moder0.vanillaplus.entity.ModEntities;
@@ -60,5 +57,4 @@ public class ModBiomes {
                         .music(MusicType.createIngameMusic(RegistryEntry.of(SoundEvents.ENTITY_WARDEN_ANGRY))).build())
                 .build();
     }
-
 }

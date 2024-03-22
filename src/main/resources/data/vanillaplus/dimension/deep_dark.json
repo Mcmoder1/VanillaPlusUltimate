@@ -2,7 +2,7 @@
   "type": "vanillaplus:deep_dark_type",
   "generator": {
     "type": "minecraft:noise",
-    "settings": "minecraft:overworld",
+    "settings": "vanillaplus:deep_dark_wasteland",
     "biome_source": {
       "type": "minecraft:fixed",
       "biome": "vanillaplus:deep_dark_wasteland"

@@ -28,7 +28,7 @@ public class ModDimensions {
                 OptionalLong.of(12000), // fixedTime
                 false, // hasSkylight
                 true, // hasCeiling
-                false, // ultraWarm
+                true, // ultraWarm
                 true, // natural
                 1.0, // coordinateScale
                 false, // bedWorks

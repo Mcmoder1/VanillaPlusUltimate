@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-
+    "vanillaplus:sculk_log",
+    "vanillaplus:sculk_wood",
+    "vanillaplus:stripped_sculk_log",
+    "vanillaplus:stripped_sculk_wood"
   ]
 }

@@ -14,6 +14,7 @@ public class ModBoats {
     public static final Identifier PALM_BOAT_ID = new Identifier(VanillaPlus.MOD_ID, "palm_boat");
     public static final Identifier PALM_CHEST_BOAT_ID = new Identifier(VanillaPlus.MOD_ID, "palm_chest_boat");
 
+
     public static final RegistryKey<TerraformBoatType> PALM_BOAT_KEY = TerraformBoatTypeRegistry.createKey(PALM_BOAT_ID);
 
     public static void registerBoats(){

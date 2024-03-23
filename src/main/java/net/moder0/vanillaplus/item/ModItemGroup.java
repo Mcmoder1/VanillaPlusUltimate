@@ -73,6 +73,20 @@ public class ModItemGroup {
             entries.add(ModBlocks.PALM_PRESSURE_PLATE);
             entries.add(ModBlocks.PALM_BUTTON);
 
+            entries.add(ModBlocks.SCULK_LOG);
+            entries.add(ModBlocks.SCULK_WOOD);
+            entries.add(ModBlocks.STRIPPED_SCULK_LOG);
+            entries.add(ModBlocks.STRIPPED_SCULK_WOOD);
+            entries.add(ModBlocks.SCULK_PLANKS);
+            entries.add(ModBlocks.SCULK_STAIRS);
+            entries.add(ModBlocks.SCULK_SLAB);
+            entries.add(ModBlocks.SCULK_FENCE);
+            entries.add(ModBlocks.SCULK_FENCE_GATE);
+            entries.add(ModBlocks.SCULK_DOOR);
+            entries.add(ModBlocks.SCULK_TRAPDOOR);
+            entries.add(ModBlocks.SCULK_PRESSURE_PLATE);
+            entries.add(ModBlocks.SCULK_BUTTON);
+
             entries.add(ModBlocks.ANDESITE_BRICKS);
             entries.add(ModBlocks.GRANITE_BRICKS);
             entries.add(ModBlocks.DIORITE_BRICKS);
@@ -102,8 +116,11 @@ public class ModItemGroup {
             entries.add(ModBlocks.RAW_SILVER_BLOCK);
             entries.add(ModBlocks.SOUL_JACK_O_LANTERN);
             entries.add(ModBlocks.PALM_LOG);
+            entries.add(ModBlocks.SCULK_LOG);
             entries.add(ModBlocks.PALM_LEAVES);
+            entries.add(ModBlocks.SCULK_LEAVES);
             entries.add(ModBlocks.PALM_SAPLING);
+            entries.add(ModBlocks.SCULK_SAPLING);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
@@ -177,6 +194,8 @@ public class ModItemGroup {
             entries.add(ModBlocks.USABLE_BEEHIVE);
             entries.add(ModItems.PALM_SIGN);
             entries.add(ModItems.HANGING_PALM_SIGN);
+            entries.add(ModItems.SCULK_SIGN);
+            entries.add(ModItems.HANGING_SCULK_SIGN);
             entries.add(ModItems.PALM_BOAT);
             entries.add(ModItems.PALM_CHEST_BOAT);
         });

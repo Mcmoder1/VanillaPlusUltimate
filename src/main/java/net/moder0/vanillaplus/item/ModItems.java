@@ -136,6 +136,12 @@ public class ModItems {
     public static final Item HANGING_PALM_SIGN = registerItem("palm_hanging_sign",
             new HangingSignItem(ModBlocks.HANGING_PALM_SIGN, ModBlocks.WALL_HANGING_PALM_SIGN, new FabricItemSettings().maxCount(16)));
 
+    public static final Item SCULK_SIGN = registerItem("sculk_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_SCULK_SIGN, ModBlocks.WALL_SCULK_SIGN));
+
+    public static final Item HANGING_SCULK_SIGN = registerItem("sculk_hanging_sign",
+            new HangingSignItem(ModBlocks.HANGING_SCULK_SIGN, ModBlocks.WALL_HANGING_SCULK_SIGN, new FabricItemSettings().maxCount(16)));
+
 //deep_dark
     //misc
     public static final Item WARDEN_SKIN = registerItem("warden_skin",

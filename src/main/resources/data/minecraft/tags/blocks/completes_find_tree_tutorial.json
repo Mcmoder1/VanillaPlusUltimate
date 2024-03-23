@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:palm_leaves"
+    "vanillaplus:palm_leaves",
+    "vanillaplus:palm_log",
+    "vanillaplus:sculk_leaves",
+    "vanillaplus:sculk_log"
   ]
 }

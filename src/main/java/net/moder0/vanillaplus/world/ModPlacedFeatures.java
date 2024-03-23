@@ -19,6 +19,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registryKey("silver_ore_placed");
     public static final RegistryKey<PlacedFeature> PALM_PLACED_KEY = registryKey("palm_placed");
+    public static final RegistryKey<PlacedFeature> SCULK_TREE_PLACED_KEY = registryKey("sculk_tree_placed");
     public static final RegistryKey<PlacedFeature> OASIS_PLACED_KEY = registryKey("oasis_placed");
     public static final RegistryKey<PlacedFeature> QUICKSAND_PLACED_KEY = registryKey("quicksand_placed");
     public static final RegistryKey<PlacedFeature> FALLEN_LOG_PLACED_KEY = registryKey("fallen_log_placed");
@@ -38,6 +39,11 @@ public class ModPlacedFeatures {
         register(context, PALM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PALM_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(0, 0.05f, 1),
                         ModBlocks.PALM_SAPLING));
+
+        register(context, SCULK_TREE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.SCULK_TREE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(0, 0.05f, 1),
+                        ModBlocks.PALM_SAPLING));
+
         register(context, FALLEN_LOG_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FALLEN_LOG_KEY),
                 PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP);
     }

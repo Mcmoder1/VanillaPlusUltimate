@@ -18,9 +18,11 @@ import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
+import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.BlockStateProviderType;
 import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.trunk.MegaJungleTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.moder0.vanillaplus.VanillaPlus;
 import net.moder0.vanillaplus.block.ModBlocks;
@@ -31,6 +33,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = registryKey("silver_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_KEY = registryKey("palm");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SCULK_TREE_KEY = registryKey("sculk_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> OASIS_KEY = registryKey("oasis_surface");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUICKSAND_KEY = registryKey("quicksand");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FALLEN_LOG_KEY = registryKey("fallen_log");
@@ -52,6 +55,13 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
                 new AcaciaFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0)),
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.SAND)).build()
+        );
+        register(context, SCULK_TREE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.REINFORCED_DEEPSLATE),
+                new MegaJungleTrunkPlacer(3, 5, 6),
+                BlockStateProvider.of(ModBlocks.PALM_LEAVES),
+                new JungleFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 10),
+                new TwoLayersFeatureSize(1, 0, 2)).build()
         );
         register(context, FALLEN_LOG_KEY, Feature.BLOCK_COLUMN, new BlockColumnFeatureConfig(List.of(BlockColumnFeatureConfig.createLayer(BiasedToBottomIntProvider.create(1, 2), SimpleBlockStateProvider.of(Blocks.OAK_LOG))), Direction.NORTH, BlockPredicate.matchingBlocks(Blocks.AIR), false));
 

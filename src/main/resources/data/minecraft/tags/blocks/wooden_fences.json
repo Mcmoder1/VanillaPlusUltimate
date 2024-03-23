@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:palm_fence"
+    "vanillaplus:palm_fence",
+    "vanillaplus:sculk_fence"
   ]
 }

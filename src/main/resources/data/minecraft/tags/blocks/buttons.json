@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:palm_button"
+    "vanillaplus:palm_button",
+    "vanillaplus:sculk_button"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:palm_pressure_plate"
+    "vanillaplus:palm_pressure_plate",
+    "vanillaplus:sculk_pressure_plate"
   ]
 }

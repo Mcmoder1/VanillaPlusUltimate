@@ -4,6 +4,10 @@
     "vanillaplus:palm_log",
     "vanillaplus:palm_wood",
     "vanillaplus:stripped_palm_log",
-    "vanillaplus:stripped_palm_wood"
+    "vanillaplus:stripped_palm_wood",
+    "vanillaplus:sculk_log",
+    "vanillaplus:sculk_wood",
+    "vanillaplus:stripped_sculk_log",
+    "vanillaplus:stripped_sculk_wood"
   ]
 }

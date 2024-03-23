@@ -19,7 +19,9 @@ import net.moder0.vanillaplus.VanillaPlus;
 import net.minecraft.util.Identifier;
 import net.moder0.vanillaplus.block.custom.PalmSapling;
 import net.moder0.vanillaplus.block.custom.Quicksand;
+import net.moder0.vanillaplus.block.custom.SculkSapling;
 import net.moder0.vanillaplus.world.tree.PalmSaplingGenerator;
+import net.moder0.vanillaplus.world.tree.SculkSaplingGenerator;
 
 
 public class ModBlocks {
@@ -174,8 +176,6 @@ public class ModBlocks {
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE).strength(0.5f), BlockSetType.OAK));
 
 
-
-
 //concrete
     //stairs
     public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
@@ -323,6 +323,81 @@ public class ModBlocks {
 
     public static final Block MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.MAGENTA_CONCRETE).strength(1.8f).strength(1.8f)));
+
+
+    public static final Block SCULK_SAPLING = registerBlock("sculk_sapling",
+            new SculkSapling(new SculkSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block POTTED_SCULK_SAPLING = Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, "potted_sculk_sapling"),
+            new FlowerPotBlock(SCULK_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
+    public static final Block SCULK_LEAVES = registerBlock("sculk_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+    public static final Block SCULK_LOG = registerBlock("sculk_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(50.0f, 1200.0f).requiresTool()));
+
+    public static final Block SCULK_WOOD = registerBlock("sculk_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).requiresTool()));
+
+    public static final Block STRIPPED_SCULK_LOG = registerBlock("stripped_sculk_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final Block STRIPPED_SCULK_WOOD = registerBlock("stripped_sculk_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final Block SCULK_PLANKS = registerBlock("sculk_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    //sign textures
+    public static final Identifier SCULK_SIGN_TEXTURE = new Identifier(VanillaPlus.MOD_ID, "entity/signs/sculk");
+    public static final Identifier SCULK_HANGING_SIGN_TEXTURE = new Identifier(VanillaPlus.MOD_ID, "entity/signs/hanging/sculk");
+    public static final Identifier SCULK_HANGING_GUI_SIGN_TEXTURE = new Identifier(VanillaPlus.MOD_ID, "textures/gui/hanging_signs/sculk");
+
+    public static final Block STANDING_SCULK_SIGN = Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, "sculk_standing_sign"),
+            new TerraformSignBlock(SCULK_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_SCULK_SIGN = Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, "sculk_wall_sign"),
+            new TerraformWallSignBlock(SCULK_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+    public static final Block HANGING_SCULK_SIGN = Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, "sculk_hanging_sign"),
+            new TerraformHangingSignBlock(SCULK_HANGING_SIGN_TEXTURE, SCULK_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_SCULK_SIGN = Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, "sculk_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(SCULK_HANGING_SIGN_TEXTURE, SCULK_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+
+    public static final BlockFamily SCULK_FAMILY = BlockFamilies.register(ModBlocks.SCULK_PLANKS)
+            .sign(ModBlocks.STANDING_SCULK_SIGN, ModBlocks.WALL_SCULK_SIGN)
+            .slab(ModBlocks.SCULK_SLAB)
+            .stairs(ModBlocks.SCULK_STAIRS)
+            .fence(ModBlocks.SCULK_FENCE)
+            .fenceGate(ModBlocks.SCULK_FENCE_GATE)
+            .button(ModBlocks.SCULK_BUTTON)
+            .pressurePlate(ModBlocks.SCULK_PRESSURE_PLATE)
+            .door(ModBlocks.SCULK_DOOR)
+            .trapdoor(ModBlocks.SCULK_TRAPDOOR)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
+    public static final Block SCULK_STAIRS = registerBlock("sculk_stairs",
+            new StairsBlock(ModBlocks.SCULK_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.5f).sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block SCULK_FENCE = registerBlock("sculk_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE).strength(2.5f).sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block SCULK_FENCE_GATE = registerBlock("sculk_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE).strength(2.5f), WoodType.WARPED));
+
+    public static final Block SCULK_DOOR = registerBlock("sculk_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).strength(3.5f).sounds(BlockSoundGroup.WOOD), BlockSetType.STONE));
+
+    public static final Block SCULK_TRAPDOOR = registerBlock("sculk_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).strength(3.5f).sounds(BlockSoundGroup.WOOD), BlockSetType.STONE));
+
+    public static final Block SCULK_BUTTON = registerBlock("sculk_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON).strength(2.5f).sounds(BlockSoundGroup.WOOD), BlockSetType.STONE, 20, false));
+
+    public static final Block SCULK_SLAB = registerBlock("sculk_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(2.5f).sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block SCULK_PRESSURE_PLATE = registerBlock("sculk_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE).strength(0.5f).sounds(BlockSoundGroup.WOOD), BlockSetType.STONE));
 
 
     //-----------------------------------------------------------------------------

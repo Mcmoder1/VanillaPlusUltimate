@@ -72,6 +72,14 @@
   "block.vanillaplus.palm_planks": "Palm Planks",
   "block.vanillaplus.palm_leaves": "Palm Leaves",
   "block.vanillaplus.palm_sapling": "Palm Sapling",
+  "block.vanillaplus.sculk_leaves": "Sculk Leaves",
+  "block.vanillaplus.sculk_sapling": "Sculk Sapling",
+
+  "block.vanillaplus.sculk_log": "Sculk Log",
+  "block.vanillaplus.stripped_sculk_log": "Stripped Sculk Log",
+  "block.vanillaplus.sculk_wood": "Sculk Wood",
+  "block.vanillaplus.stripped_sculk_wood": "Stripped Sculk Wood",
+  "block.vanillaplus.sculk_planks": "Sculk Planks",
 
   "block.vanillaplus.palm_fence": "Palm Fence",
   "block.vanillaplus.palm_fence_gate": "Palm Fence Gate",
@@ -82,10 +90,24 @@
   "block.vanillaplus.palm_stairs": "Palm Stairs",
   "block.vanillaplus.palm_slab": "Palm Slab",
 
+  "block.vanillaplus.sculk_fence": "Sculk Fence",
+  "block.vanillaplus.sculk_fence_gate": "Sculk Fence Gate",
+  "block.vanillaplus.sculk_door": "Sculk Door",
+  "block.vanillaplus.sculk_trapdoor": "Sculk Trapdoor",
+  "block.vanillaplus.sculk_button": "Sculk Button",
+  "block.vanillaplus.sculk_pressure_plate": "Sculk Pressure Plate",
+  "block.vanillaplus.sculk_stairs": "Sculk Stairs",
+  "block.vanillaplus.sculk_slab": "Sculk Slab",
+
   "block.vanillaplus.palm_standing_sign": "Palm Sign",
   "block.vanillaplus.palm_wall_sign": "Palm Wall Sign",
   "block.vanillaplus.palm_hanging_sign": "Palm Hanging Sign",
   "block.vanillaplus.palm_wall_hanging_sign": "Palm Wall Hanging Sign",
+
+  "block.vanillaplus.sculk_standing_sign": "Sculk Sign",
+  "block.vanillaplus.sculk_wall_sign": "Sculk Wall Sign",
+  "block.vanillaplus.sculk_hanging_sign": "Sculk Hanging Sign",
+  "block.vanillaplus.sculk_wall_hanging_sign": "Sculk Wall Hanging Sign",
 
   "block.vanillaplus.silver_ore": "Silver Ore",
   "block.vanillaplus.deepslate_silver_ore": "Deepslate Silver Ore",
@@ -101,6 +123,9 @@
   "item.vanillaplus.quicksand_bucket": "Bucket of Quicksand",
   "item.vanillaplus.palm_boat": "Palm Boat",
   "item.vanillaplus.palm_chest_boat": "Palm Chest Boat",
+
+  "item.vanillaplus.sculk_boat": "Sculk Boat",
+  "item.vanillaplus.sculk_chest_boat": "Sculk Chest Boat",
 
   "item.vanillaplus.cherries": "Cherries",
   "item.vanillaplus.coconut": "Coconut",

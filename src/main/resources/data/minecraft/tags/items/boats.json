@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "vanillaplus:palm_boat",
-    "vanillaplus:palm_chest_boat"
+    "vanillaplus:palm_chest_boat",
+    "vanillaplus:sculk_boat",
+    "vanillaplus:sculk_chest_boat"
   ]
 }

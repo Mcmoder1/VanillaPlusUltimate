@@ -8,6 +8,7 @@ import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
+import net.moder0.vanillaplus.block.ModBlocks;
 import net.moder0.vanillaplus.item.ModItems;
 
 import java.util.Optional;
@@ -19,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
 
     }
 

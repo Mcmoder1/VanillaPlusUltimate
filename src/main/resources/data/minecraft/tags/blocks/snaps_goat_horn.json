@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "vanillaplus:silver_ore",
-    "vanillaplus:palm_log"
+    "vanillaplus:palm_log",
+    "vanillaplus:sculk_log"
   ]
 }

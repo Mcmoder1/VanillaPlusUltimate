@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "vanillaplus:palm_standing_sign",
-    "vanillaplus:palm_hanging_sign"
+    "vanillaplus:palm_hanging_sign",
+    "vanillaplus:sculk_standing_sign",
+    "vanillaplus:sculk_hanging_sign"
   ]
 }

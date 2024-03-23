@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:palm_trapdoor"
+    "vanillaplus:palm_trapdoor",
+    "vanillaplus:sculk_trapdoor"
   ]
 }

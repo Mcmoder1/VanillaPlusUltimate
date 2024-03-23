@@ -26,9 +26,6 @@
 		],
 		"rei_client": [
 			"net.moder0.vanillaplus.compat.VanillaPlusREIClientPlugin"
-		],
-		"terrablender": [
-			"net.moder0.vanillaplus.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [

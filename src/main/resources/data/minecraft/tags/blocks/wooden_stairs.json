@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "vanillaplus:palm_stairs"
+    "vanillaplus:palm_stairs",
+    "vanillaplus:sculk_stairs"
   ]
 }

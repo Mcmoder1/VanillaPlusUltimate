@@ -6,9 +6,11 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.moder0.vanillaplus.VanillaPlus;
+import net.moder0.vanillaplus.block.ModBlocks;
 import net.moder0.vanillaplus.item.ModItems;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -18,6 +20,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+
+
 
     }
 

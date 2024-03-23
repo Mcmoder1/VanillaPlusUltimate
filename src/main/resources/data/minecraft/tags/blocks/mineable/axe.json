@@ -20,6 +20,10 @@
     "vanillaplus:palm_standing_sign",
     "vanillaplus:palm_wall_sign",
     "vanillaplus:palm_hanging_sign",
-    "vanillaplus:palm_wall_hanging_sign"
+    "vanillaplus:palm_wall_hanging_sign",
+    "vanillaplus:sculk_log",
+    "vanillaplus:sculk_wood",
+    "vanillaplus:stripped_sculk_log",
+    "vanillaplus:stripped_sculk_wood"
   ]
 }

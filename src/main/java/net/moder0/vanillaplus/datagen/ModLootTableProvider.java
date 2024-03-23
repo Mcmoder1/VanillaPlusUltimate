@@ -17,5 +17,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //addDrop(ModBlocks.WALL_PALM_SIGN, drops(ModBlocks.STANDING_PALM_SIGN));
         //addDrop(ModBlocks.WALL_HANGING_PALM_SIGN, drops(ModBlocks.HANGING_PALM_SIGN));
 
+
     }
 }

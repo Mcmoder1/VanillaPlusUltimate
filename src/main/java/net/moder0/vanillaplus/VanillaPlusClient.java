@@ -14,9 +14,8 @@ import net.minecraft.client.util.SpriteIdentifier;
 import net.moder0.vanillaplus.block.ModBlocks;
 import net.moder0.vanillaplus.entity.ModBoats;
 import net.moder0.vanillaplus.entity.ModEntities;
-import net.moder0.vanillaplus.entity.client.ModModelLayers;
-import net.moder0.vanillaplus.entity.client.SculkZombieModel;
-import net.moder0.vanillaplus.entity.client.SculkZombieRenderer;
+import net.moder0.vanillaplus.entity.client.*;
+import net.moder0.vanillaplus.entity.custom.SentryEntity;
 
 public class VanillaPlusClient implements ClientModInitializer {
 
@@ -29,7 +28,9 @@ public class VanillaPlusClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_PALM_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_SCULK_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PALM_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SCULK_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PALM_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SCULK_DOOR, RenderLayer.getCutout());
 
         StrippableBlockRegistry.register(ModBlocks.SCULK_WOOD, ModBlocks.STRIPPED_SCULK_WOOD);
         StrippableBlockRegistry.register(ModBlocks.PALM_LOG, ModBlocks.STRIPPED_PALM_LOG);
@@ -61,6 +62,9 @@ public class VanillaPlusClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SCULK_ZOMBIE, SculkZombieModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.SCULK_ZOMBIE, SculkZombieRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.SENTRY, SentryModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.SENTRY, SentryRenderer::new);
     }
 
 }

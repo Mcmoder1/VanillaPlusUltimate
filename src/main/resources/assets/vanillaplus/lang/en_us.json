@@ -183,11 +183,16 @@
   "item.vanillaplus.activated_key": "Activated Key",
   "item.vanillaplus.sculk_upgrade_smithing_template": "Warden Upgrade Smithing Template",
   "item.vanillaplus.sculk_zombie_spawn_egg": "Sculk Zombie Spawn Egg",
+  "item.vanillaplus.sentry_spawn_egg": "Sentry Spawn Egg",
 
+  "effect.vanillaplus.sculk": "Sculk",
+  "item.minecraft.potion.effect.sculk_potion": "Sculk Potion",
+  "item.minecraft.splash_potion.effect.sculk_potion": "Splash Potion of Sculk",
+  "item.minecraft.lingering_potion.effect.sculk_potion": "Lingering Potion of Sculk",
 
-  "entity.minecraft.villager.beekeeper": "Beekeeper",
-  "entity.minecraft.villager.builder": "Builder",
-  "entity.minecraft.villager.miner": "Miner",
+  "entity.vanillaplus.villager.beekeeper": "Beekeeper",
+  "entity.vanillaplus.villager.builder": "Builder",
+  "entity.vanillaplus.villager.miner": "Miner",
   "entity.vanillaplus.sculk_zombie": "Sculk Zombie"
 
 }

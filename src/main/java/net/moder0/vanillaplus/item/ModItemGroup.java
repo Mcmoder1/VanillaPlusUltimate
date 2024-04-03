@@ -202,6 +202,7 @@ public class ModItemGroup {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(entries -> {
             entries.add(ModItems.SCULK_ZOMBIE_SPAWN_EGG);
+            entries.add(ModItems.SENTRY_SPAWN_EGG);
         });
     }
 }

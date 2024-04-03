@@ -169,6 +169,9 @@ public class ModItems {
     public static final Item SCULK_ZOMBIE_SPAWN_EGG = registerItem("sculk_zombie_spawn_egg",
             new SpawnEggItem(ModEntities.SCULK_ZOMBIE,0x008B42,0x0055D1 , new FabricItemSettings()));
 
+    public static final Item SENTRY_SPAWN_EGG = registerItem("sentry_spawn_egg",
+            new SpawnEggItem(ModEntities.SENTRY,0x000242,0xdbd55c , new FabricItemSettings()));
+
     //armor
     public static final Item WARDEN_HELMET = registerItem("warden_helmet",
             new CopperEffects(ModArmorMaterials.WARDEN, ArmorItem.Type.HELMET, new FabricItemSettings()));

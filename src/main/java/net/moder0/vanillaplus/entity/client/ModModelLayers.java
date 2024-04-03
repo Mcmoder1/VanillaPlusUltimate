@@ -6,4 +6,5 @@ import net.moder0.vanillaplus.VanillaPlus;
 
 public class ModModelLayers {
     public static final EntityModelLayer SCULK_ZOMBIE = new EntityModelLayer(new Identifier(VanillaPlus.MOD_ID, "sculk_zombie"), "main");
+    public static final EntityModelLayer SENTRY = new EntityModelLayer(new Identifier(VanillaPlus.MOD_ID, "sentry"), "main");
 }

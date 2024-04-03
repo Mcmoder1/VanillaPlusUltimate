@@ -1,16 +1,18 @@
 package net.moder0.vanillaplus.entity.custom;
 
-import net.minecraft.entity.AnimationState;
-import net.minecraft.entity.EntityPose;
-import net.minecraft.entity.EntityType;
+import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldEvents;
+import net.moder0.vanillaplus.effect.ModEffects;
 
 public class SculkZombieEntity extends ZombieEntity {
 
@@ -67,5 +69,33 @@ public class SculkZombieEntity extends ZombieEntity {
     @Override
     protected SoundEvent getStepSound() {
         return SoundEvents.ENTITY_ZOMBIE_STEP;
+    }
+
+    @Override
+    public boolean tryAttack(Entity target) {
+        boolean bl = super.tryAttack(target);
+        if (bl && this.getMainHandStack().isEmpty() && target instanceof LivingEntity) {
+            float f = this.getWorld().getLocalDifficulty(this.getBlockPos()).getLocalDifficulty();
+            ((LivingEntity)target).addStatusEffect(new StatusEffectInstance(ModEffects.SCULK, 140 * (int)f), this);
+        }
+        return bl;
+    }
+
+    @Override
+    protected boolean canConvertInWater() {
+        return true;
+    }
+
+    @Override
+    protected void convertInWater() {
+        this.convertTo(EntityType.ZOMBIE);
+        if (!this.isSilent()) {
+            this.getWorld().syncWorldEvent(null, WorldEvents.HUSK_CONVERTS_TO_ZOMBIE, this.getBlockPos(), 0);
+        }
+    }
+
+    @Override
+    protected ItemStack getSkull() {
+        return ItemStack.EMPTY;
     }
 }

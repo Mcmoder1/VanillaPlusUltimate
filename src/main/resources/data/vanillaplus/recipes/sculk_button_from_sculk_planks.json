@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sculk",
+  "ingredients": [
+    {
+      "item": "vanillaplus:sculk_planks"
+    }
+  ],
+  "result": {
+    "item": "vanillaplus:sculk_button"
+  }
+}

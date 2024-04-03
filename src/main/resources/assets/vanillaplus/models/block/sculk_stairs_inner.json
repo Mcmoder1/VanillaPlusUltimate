@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "vanillaplus:block/sculk_planks",
+    "side": "vanillaplus:block/sculk_planks",
+    "top": "vanillaplus:block/sculk_planks"
+  }
+}

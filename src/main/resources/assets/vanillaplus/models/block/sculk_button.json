@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "vanillaplus:block/sculk_planks"
+  }
+}

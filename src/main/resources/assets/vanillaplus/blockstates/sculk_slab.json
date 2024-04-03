@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaplus:block/sculk_slab"
+    },
+    "type=double": {
+      "model": "vanillaplus:block/sculk_planks"
+    },
+    "type=top": {
+      "model": "vanillaplus:block/sculk_slab_top"
+    }
+  }
+}
